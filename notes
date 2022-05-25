@@ -1,0 +1,34 @@
+const name = ['aylene', 'alejandra', 'santillan']; // array used for examples
+
+console.log(name[0]); // console.log in order to show array index starts at 0, which will return the first item of the array
+console.log(name.length); // gives us length of array; returns 3
+console.log(name.pop()); // removes last item of the array, in this case, 'santillan'
+console.log(name); // console.log used to show array now only contains items ['aylene', 'alejandra']
+
+name.push('santillan'); // .push will respectively add 'santillan' to the end of the array
+console.log(name); // console.log used to show array now contains items ['aylene', 'alejandra', 'santillan']
+// push will add santillan to the end of the array
+console.log(name.slice(0,1));
+// slice will return back a copy of the items starting at 0 and ending before 1 from the array
+console.log(name); // console.log used to respresent that the original array has not been modified at all after slice, proving that slice returns us a copy
+
+console.log(name.shift()); // .shift() will remove the first item of the array, in this case 'aylene'
+console.log(name); // console.log used to show array now only contains ['alejandra', 'santillan'] after the .shift()
+
+// nested arrays
+// arrays start at index 0
+
+const numbers = [[2,4,8], [3,9,81], [5,25,125]];
+
+// "access number 9 from the array"
+
+console.log(numbers[1][1]); // in the nested array, number 9 lies in index 1, and inside index 1, 9 is in index 1
+
+// "access number 125 from the array"
+
+console.log(numbers[2][2]); // in the nested array number 125 lies in index 2, and inside index 2, 125 is in index 2
+
+// "access numbers 4 and 8
+
+console.log(numbers[0].slice(1,3));
+// in the nested array, numbers 4 and 8 are in index 0, in order to access two numbers, I used the method slice in order to return 4 and 8
